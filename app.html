@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Opacity Slider</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Opacity Slider</h1>
+        </div>
+
+        <div id="imgRender">
+            <img id="image" src alt="Upload an image" style="display:none;">
+        </div>
+
+        <div id="bodyContainer">
+            <!-- Hidden file input -->
+            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+
+            <div id="fileName">
+                <p id="FileNameDisplay">Insert a file</p>
+            </div>
+            <!-- Link to trigger file upload -->
+            <a href="#" id="upload-link">Upload Image</a>
+
+            <div class="controls">
+                <label for="opacity-slider" id="opacitySliderLabel" style="display: none;">Opacity</label>
+            </div>
+
+            <input type="range" id="opacity-slider" min="0" max="100" value="100">
+
+            <div>
+                <button id="save-btn">Save as PNG</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
